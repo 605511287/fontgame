@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+html, body{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+body{
+    background: url("../img/qiang.png");
+}
+.screen{
+    width:100%;
+    height:7.94rem;
+    background-image:url("../img/scen.png") ; 
+    background-size: contain ; 
+}
+.bottom{
+    width:100%;
+    height:4.45rem;
+    background-image: url("../img/Key.png");
+    background-size: contain;
+    position: fixed;
+    bottom:0;
+    left:0;
+}
+.bottom .jianbox{
+    width:7.02rem;
+    height:4rem;
+    background-color: rgba(32, 74, 208, 0.6);
+    margin:0.22rem auto;
+    display: flex;
+    border-radius: 0.2rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.bottom .jianbox .btn{
+    width:0.5rem;
+    height:0.8rem;
+    background-image: url("../img/Letter.png");
+    background-size: contain;
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 0.8rem;
+    font-weight: bold;
+    margin:0 0.1rem;
+    box-shadow: 0.1rem 0.1rem  rgba(33, 33,33, 0.8);
+}
+.bottom .jianbox .btn:nth-child(11){
+    margin-left:0.5rem;
+}
+.bottom .jianbox .btn:nth-child(20){
+    margin-left:1.19rem;
+}
+.music{
+    width:0.5rem;
+    height:0.5rem;
+    background-size: contain;
+    position: fixed;
+    top:0.3rem;
+    right:0.2rem;   
+}
+.open{
+    background-image: url("../img/Aplay.png")
+}
+.close{
+    background-image: url("../img/Apause.png")
+}
+.tab{
+    width:1.24rem;
+    height:2.61rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top:2.6rem;
+    right:0.2rem;
+}
+.tab .life{
+    width:100%;
+    height:1.24rem;
+    background-image: url("../img/Health.png");
+    background-size: contain;
+    font-size: 0.5rem;
+    font-weight: bold;
+    line-height: 0.8rem;
+    text-align: center;
+}
+.tab .jifen{
+    width:100%;
+    height:1.24rem;
+    font-size: 0.5rem;
+    font-weight: bold;
+    line-height: 0.8rem;
+    text-align: center;    
+    background-image: url("../img/Point.png");
+    background-size: contain;
+}
+.switch{
+    width:1.24rem;
+    height:1.24rem;
+    position: fixed;
+    top:5.4rem;
+    right:0.2rem;
+}
+.kai{
+    background-image: url("../img/Play.png");
+    background-size: contain;    
+}
+.guan{
+    background-size: contain;
+    background-image: url("../img/Pause.png");
+}
+.cloud{
+    width:100%;
+    height:0.49rem;
+    background-size: contain;
+    position: fixed;
+    top:0.8rem;
+    left:0;
+}
+.img{
+    background: url("../img/clound_06.png") no-repeat;
+    background-size: contain;
+    width:4.2rem;
+    height:0.45rem;
+    animation: move 2s linear infinite alternate;
+}
+.letterBox{
+    width:0.58rem;
+    height:0.8rem;
+    position: fixed;
+    top:1rem;
+    left:0;
+    background-size: contain;
+}
+@keyframes move{
+    from{
+        
+    }
+    to{
+        transform: translateX(3.5rem);
+    }
+}
+.death{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(33, 33,33, 0.8);
+    display: none;
+}
+.died{
+    position: absolute;
+    background-image: url(../img/gameover.png);
+    width:4.3rem;
+    height:4.5rem;
+    left:0;
+    right:0;
+    margin:0 auto;
+    top:0;
+    background-size: contain;
+}
+.died .text{
+    position: absolute;
+    top:50%;
+    left:50%;
+}
+.replay{
+    width:2.63rem;
+    height:0.6rem;
+    background-image: url("../img/btn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left:0;
+    right:0;
+    margin:0 auto;
+    bottom:0.5rem;
+}
